@@ -14,7 +14,6 @@ export const register = async (req, res, next) => {
     });
 
    const user= await newUser.save();
-   console.log(user)
    const { password, isAdmin, ...otherDetails } = user._doc; //anser is same for user and user._doc
 
 
