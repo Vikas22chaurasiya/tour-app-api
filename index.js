@@ -24,7 +24,7 @@ const connect = async () => {
 mongoose.connection.on("disconnected", () => {
   console.log("mongoDB disconnected!");
 });
-const allowedOrigins = ['https://tour-app-c9qv.onrender.com'];
+const allowedOrigins = ['https://tour-app-c9qv.onrender.com','https://tour-admin.onrender.com'];
 app.use(cors({
   origin: allowedOrigins
 }));
